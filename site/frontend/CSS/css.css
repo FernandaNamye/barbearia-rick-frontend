@@ -685,11 +685,24 @@ h2 {
 
 
 
-/*@media (max-width: 768px) {
+@media (max-width: 768px) {
     
     
+    body,html{
+        background-image: url('../mobileescuro.png') !important; 
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
 
-   
+    
+    .contentor, .apresent, .contentor-texto, .preços, .contato-container, .card {
+        background: rgba(18, 18, 18, 0.7) !important; 
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        border-radius: 8px;
+    }
    
    
     .hero-container {
