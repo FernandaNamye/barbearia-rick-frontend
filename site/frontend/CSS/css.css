@@ -688,7 +688,7 @@ h2 {
 @media (max-width: 768px) {
     
     
-    body,html{
+    body{
         background-image: url('../mobileescuro.png') !important; 
         background-size: cover;
         background-position: center;
