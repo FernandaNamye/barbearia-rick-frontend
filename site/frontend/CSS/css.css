@@ -690,20 +690,30 @@ h2 {
     
   
     
-   html, body {
+  html {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        min-height: 100dvh !important; 
-        overflow-x: hidden !important;
-        background-color: #121212 !important; 
-        background-image: url('../mobileescuro.png') !important;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed !important; 
-        background-position: center top !important; 
+        height: 100dvh !important;
+        overflow: hidden !important;
     }
 
+    
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        height: 100dvh !important;
+        overflow-y: auto !important; 
+        
+        background-color: #121212 !important; 
+        background-image: url('../mobileescuro.png') !important;
+        
+        background-size: auto 100% !important; 
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important; 
+        background-position: center top !important;
+    }
     
     :root {
         height: 100%;
