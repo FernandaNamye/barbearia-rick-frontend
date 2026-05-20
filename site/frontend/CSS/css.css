@@ -685,27 +685,30 @@ h2 {
 
 
 
-@media (max-width: 768px) {
+@media(max-width: 768px) {
+
+    @media(max-width: 768px) {
+
+    
     
     
   
-    
+  
   html {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        height: 100dvh !important;
-        overflow: hidden !important;
+        
     }
 
     
-    body {
+    body ,html {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        height: 100dvh !important;
-        overflow-y: auto !important; 
-        overflow-x: auto !important;
+        
+        overflow-y: hidden !important; 
+        overflow-x: hidden!important;
         background-color: #121212 !important; 
         background-image: url('../mobileescuro.png') !important;
         background-size: auto 100% !important; 
@@ -714,18 +717,11 @@ h2 {
         background-position: center top !important;
         overscroll-behavior-y: none !important; 
         -webkit-overflow-scrolling: auto !important;
-    }
-    
-    :root {
-        height: 100%;
-    }
-    *, *::before, *::after {
-        box-sizing: border-box !important;
+        -webkit-overflow-scrolling: touch !important;
     }
 
-    * {
-        -webkit-overflow-scrolling: touch; 
-    }
+
+   
 
 
     .contentor, .apresent, .contentor-texto, .preços, .contato-container {
@@ -735,7 +731,7 @@ h2 {
         border: 1px solid rgba(212, 175, 55, 0.15) !important;
         border-radius: 8px !important;
         
-    }
+    }}
 
     main, .main-container, #wrapper, .container-principal {
         width: 100% !important;
@@ -746,7 +742,7 @@ h2 {
     }
    
    .hero-container {
-        position: fixed!important;
+        position: relative!important;
         width: 100vw !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
@@ -1042,6 +1038,7 @@ h2 {
 .rodape-conteudo {
         flex-direction: column;
         text-align: center;
+        position: relative;
     }
 
     .rodape-coluna {
