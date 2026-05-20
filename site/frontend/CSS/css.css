@@ -685,53 +685,374 @@ h2 {
 
 
 
-/* 1. SEU CSS NORMAL (DESKTOP) FICA FORA DE QUALQUER @MEDIA */
-/* O código que você já tem para desktop continua aqui em cima normalmente */
 
-/* 2. ESTRUTURA CORRETA DO MEDIA QUERY */
-@media (max-width: 768px) {
+@media(max-width: 768px) {
+
     
-    html, body {
+    
+    
+  
+  
+  html {
+        margin: 0 !important;
+        padding: 0 !important;
         width: 100% !important;
-        overflow-x: hidden !important;
+        
     }
 
-    .hero-container {
+    
+    body  {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        
+        overflow-y: hidden !important; 
+        overflow-x: hidden!important;
+        background-color: #121212 !important; 
+        background-image: url('../mobileescuro.png') !important;
+        background-size: auto 100% !important; 
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important; 
+        background-position: center top !important;
+        overscroll-behavior-y: none !important; 
+        -webkit-overflow-scrolling: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+
+   
+
+
+    .contentor, .apresent, .contentor-texto, .preços, .contato-container {
+        background-image: none !important;
+        -webkit-backdrop-filter: blur(4px) !important;
+        backdrop-filter: blur(4px) !important;
+        border: 1px solid rgba(212, 175, 55, 0.15) !important;
+        border-radius: 8px !important;
+        
+    }
+
+    main, .main-container, #wrapper, .container-principal {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto !important;
+        padding: 0 !important;
+        
+    }
+   
+   .hero-container {
+        position: relative!important;
+        width: 100vw !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
         height: 56.25vw !important;
         min-height: 180px !important;
         max-height: 240px !important;
+        margin-top: 0 !important;
+        margin-bottom: 25px !important;
+        padding: 0 !important;
+        overflow: hidden !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+        contain: layout paint !important;
+    }
+
+    .video-fundo {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        transform: none !important;
+        z-index: 1 !important;
+       
+    }
+
+   
+    #header {
+        position: absolute !important; 
+        top: 0 !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        width: 100vw !important;
+        z-index: 10 !important;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.3) 100%) !important;
+        padding: 10px 0 !important;
+        margin: 0 !important;
+    }
+
+    #menu {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     .nav-lista {
+        display: flex !important;
         flex-direction: row !important;
+        justify-content: space-around !important;
+        align-items: center !important;
         gap: 5px !important;
+        padding: 0 10px !important;
+        margin: 0 !important;
+        list-style: none !important;
     }
 
     .nav-lista li a {
         font-size: 11px !important;
+        font-weight: bold !important;
+        color: #ffffff !important;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9) !important;
+        text-decoration: none !important;
+        padding: 6px 8px !important;
+        
+        border-radius: 4px !important;
     }
 
+   
+    h1, .titulo-secao {
+        font-size: 1.4rem !important;
+        text-align: center !important;
+        padding: 0 10px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+        color: #d4af37 !important;
+    }
+
+  
     .contentor {
         display: flex !important;
-        flex-direction: row !important;
-        overflow-x: auto !important;
-        width: 95% !important;
+        flex-direction: row !important; 
+        overflow-x: auto !important;    
+        scroll-behavior: smooth !important;
+        white-space: nowrap !important; 
+        gap: 15px !important;           
+        width: 95% !important;         
+        max-width: 100% !important;
         margin: 0 auto !important;
+        padding: 15px !important;
+        border-radius: 8px !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+    
+    .contentor::-webkit-scrollbar {
+        display: none !important; 
     }
 
-    .apresent, .contentor-texto, .preços, .contato-container {
-        width: 90% !important;
-        max-width: 400px !important; /* Aumentei um pouco para não ficar tão espremido */
-        margin: 20px auto !important;
-    }
-
-    .card {
-        width: 100% !important;
-    }
-
-    .rodape-conteudo {
+    .perfil {
+        display: inline-flex !important;
         flex-direction: column !important;
+        align-items: center !important;
+        flex-shrink: 0 !important; 
+        width: 140px !important;   
+    }
+
+    .contentor img {
+        width: 140px !important;  
+        height: 140px !important;
+        border-radius: 6px !important;
+        object-fit: cover !important;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .perfil span {
+        margin-top: 8px !important;
+        font-size: 12px !important;
+        color: #ffffff !important;
+        font-weight: bold !important;
+        white-space: normal !important; 
         text-align: center !important;
     }
 
-} /* ESTA CHAVE FECHA O @MEDIA. ELA É OBRIGATÓRIA. */
+   
+    .apresent {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        gap: 12px !important;
+        width: 80% !important;
+        max-width: 290px !important;
+        margin: 20px auto !important;
+        padding: 15px !important;
+        border-radius: 8px !important;
+    }
+
+    .apresent img {
+        width: 110px !important; 
+        height: auto !important;
+        border-radius: 6px !important;
+    }
+
+    .apresent-texto h2 {
+        color: #d4af37 !important;
+        font-size: 1.15rem !important;
+        margin-top: 0 !important;
+        margin-bottom: 5px !important;
+    }
+
+    .apresent-texto p {
+        font-size: 12px !important; 
+        line-height: 1.4 !important;
+        color: white!important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    
+    .contentor-texto, .preços {
+        width: 80% !important;
+        max-width: 290px !important;
+        margin: 20px auto !important;
+        padding: 15px !important;
+        border-radius: 8px !important;
+        text-align: center !important;
+    }
+
+    .contentor-texto p {
+        font-size: 12px !important;
+        color: #ffffff !important;
+        line-height: 1.4 !important;
+        margin: 0 !important;
+    }
+
+    .preços h1 {
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+        font-size: 1.2rem !important;
+    }
+
+    .preços p {
+        font-size: 12px !important;
+        margin: 5px 0 !important;
+    }
+
+    
+  
+
+.carousel-wrapper {
+    padding: 0 !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+}
+
+.carousel-container {
+    width: 92% !important; 
+    max-width: 360px !important;    
+    height: 250px !important;  
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    position: relative !important; 
+}
+
+.titulo-linhas {
+    font-size: 1.2rem !important;
+    margin-top: 25px !important;   
+    margin-bottom: 15px !important; 
+    padding: 0 !important; 
+}
+
+.secao-carousel {
+    padding-top: 0 !important; 
+    padding-bottom: 0 !important; 
+    margin-top: 0 !important;
+    margin-bottom: 35px !important; 
+}
+
+.card {
+    width: 100% !important;
+    
+  
+    min-height: 190px !important; 
+    height: auto !important;
+    
+    
+    padding: 15px 12px 25px 12px !important;     
+    
+    position: absolute !important;
+    top: 0 !important; 
+    left: 50% !important;
+    transform: translateX(-50%) !important; 
+    
+   
+    white-space: normal !important; 
+    word-wrap: break-word !important;
+    word-break: normal !important; 
+    box-sizing: border-box !important;
+    
+    
+    overflow: visible !important; 
+}
+
+
+.card * {
+    white-space: normal !important;
+}
+
+
+.carousel-container button, 
+.carousel-container .setas, 
+.carousel-container span {
+    margin-top: 210px !important; 
+}
+
+
+.card.centro {
+    transform: translateX(-50%) scale(1) !important;
+    z-index: 3 !important;
+}
+.card.atras-esquerda {
+    transform: translateX(-105%) scale(0.85) !important;
+    opacity: 0.1 !important;
+    z-index: 1 !important;
+}
+.card.atras-direita {
+    transform: translateX(5%) scale(0.85) !important;
+    opacity: 0.1 !important;
+    z-index: 1 !important;
+}
+    .contato-container {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 15px !important;
+        width: 80% !important;
+        max-width: 290px !important;
+        margin: 20px auto !important;
+        padding: 15px !important;
+    }
+
+    .info-contato, .mapa-quadrado {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .mapa-quadrado iframe {
+        width: 100% !important;
+        height: 160px !important; 
+        border-radius: 6px !important;
+    }
+.rodape-conteudo {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+
+    .rodape-coluna {
+        margin-bottom: 40px;
+    }
+
+    .redes-sociais {
+        align-items: center;
+    }
+
+    .link-appbarber img {
+        margin: 0 auto;
+    }
+
+    .rodape-inferior-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }}
