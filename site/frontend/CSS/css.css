@@ -685,13 +685,8 @@ h2 {
 
 
 @media(max-width: 768px) {
-
     
-    
-    
-  
-  
-  html {
+    html {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
@@ -699,7 +694,7 @@ h2 {
     }
 
     
-    body ,html {
+    body {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
@@ -715,10 +710,6 @@ h2 {
         -webkit-overflow-scrolling: auto !important;
         -webkit-overflow-scrolling: touch !important;
     }
-
-
-   
-
 
     .contentor, .apresent, .contentor-texto, .preços, .contato-container {
         background-image: none !important;
