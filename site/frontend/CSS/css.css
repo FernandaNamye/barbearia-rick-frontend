@@ -684,17 +684,27 @@ h2 {
 
 
 
-@media(max-width: 768px) {
-
-
+@media (max-width: 768px) {
     
-    body ,html {
+    
+  
+    
+  html {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        
-        overflow-y: hidden !important; 
-        overflow-x: hidden!important;
+        height: 100dvh !important;
+        overflow: hidden !important;
+    }
+
+    
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        height: 100dvh !important;
+        overflow-y: auto !important; 
+        overflow-x: hidden !important;
         background-color: #121212 !important; 
         background-image: url('../mobileescuro.png') !important;
         background-size: auto 100% !important; 
@@ -705,8 +715,7 @@ h2 {
         -webkit-overflow-scrolling: auto !important;
         -webkit-overflow-scrolling: touch !important;
     }
-
-
+    
    
 
 
@@ -718,7 +727,6 @@ h2 {
         border-radius: 8px !important;
         
     }
-
 
     main, .main-container, #wrapper, .container-principal {
         width: 100% !important;
