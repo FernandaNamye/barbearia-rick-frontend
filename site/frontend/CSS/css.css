@@ -688,23 +688,32 @@ h2 {
 @media (max-width: 768px) {
     
     
-  @media (max-width: 768px) {
+  
     
-    html, body {
-        width: 100% !important;
-        max-width: 100vw !important;
+   html, body {
         margin: 0 !important;
         padding: 0 !important;
+        width: 100% !important;
+        min-height: 100dvh !important; 
         overflow-x: hidden !important;
         background-color: #121212 !important; 
         background-image: url('../mobileescuro.png') !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
-       background-attachment: scroll !important;
-        background-position: center center !important;
+        background-attachment: fixed !important; 
+        background-position: center top !important; 
     }
+
+    
+    :root {
+        height: 100%;
+    }
+    *, *::before, *::after {
+        box-sizing: border-box !important;
+    }
+
     * {
-        -webkit-overflow-scrolling: touch;
+        -webkit-overflow-scrolling: touch; 
     }
 
 
@@ -716,27 +725,23 @@ h2 {
         border-radius: 8px !important;
     }
 
-    
-}
-   
     main, .main-container, #wrapper, .container-principal {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 auto !important;
         padding: 0 !important;
     }
-
    
-    .hero-container {
+   .hero-container {
         position: relative !important;
-        width: 100vw !important; 
+        width: 100vw !important;
         left: 50% !important;
-        transform: translateX(-50%) !important; 
-        height: 56.25vw !important; 
+        transform: translateX(-50%) !important;
+        height: 56.25vw !important;
         min-height: 180px !important;
-        max-height: 240px !important; 
+        max-height: 240px !important;
         margin-top: 0 !important;
-        margin-bottom: 25px !important; 
+        margin-bottom: 25px !important;
         padding: 0 !important;
         overflow: hidden !important;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
@@ -748,7 +753,7 @@ h2 {
         left: 0 !important;
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important; 
+        object-fit: cover !important;
         object-position: center !important;
         transform: none !important;
         z-index: 1 !important;
