@@ -700,14 +700,17 @@ h2 {
         background-image: url('../mobileescuro.png') !important;
         background-size: cover !important;
         background-repeat: no-repeat !important;
-        background-attachment: fixed !important;
+       background-attachment: scroll !important;
         background-position: center center !important;
+    }
+    * {
+        -webkit-overflow-scrolling: touch;
     }
 
 
     .contentor, .apresent, .contentor-texto, .preços, .contato-container {
         background-image: none !important;
-        
+        -webkit-backdrop-filter: blur(4px) !important;
         backdrop-filter: blur(4px) !important;
         border: 1px solid rgba(212, 175, 55, 0.15) !important;
         border-radius: 8px !important;
