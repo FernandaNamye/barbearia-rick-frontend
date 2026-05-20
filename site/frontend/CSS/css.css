@@ -689,31 +689,34 @@ h2 {
     
   
     
-   html, body {
+  html {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        min-height: 100dvh !important; 
-        overflow-x: hidden !important;
-        background-color: #121212 !important; 
-        background-image: url('../mobileescuro.png') !important;
-        background-size: cover !important;
-        background-repeat: no-repeat !important;
-        background-attachment: fixed !important; 
-        background-position: center top !important; 
+        height: 100dvh !important;
+        overflow: hidden !important;
     }
 
     
-    :root {
-        height: 100%;
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+        height: 100dvh !important;
+        overflow-y: auto !important; 
+        overflow-x: hidden !important;
+        background-color: #121212 !important; 
+        background-image: url('../mobileescuro.png') !important;
+        background-size: auto 100% !important; 
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important; 
+        background-position: center top !important;
+        overscroll-behavior-y: none !important; 
+        -webkit-overflow-scrolling: auto !important;
+        -webkit-overflow-scrolling: touch !important;
     }
-    *, *::before, *::after {
-        box-sizing: border-box !important;
-    }
-
-    * {
-        -webkit-overflow-scrolling: touch; 
-    }
+    
+   
 
 
     .contentor, .apresent, .contentor-texto, .preços, .contato-container {
@@ -722,6 +725,7 @@ h2 {
         backdrop-filter: blur(4px) !important;
         border: 1px solid rgba(212, 175, 55, 0.15) !important;
         border-radius: 8px !important;
+        
     }
 
     main, .main-container, #wrapper, .container-principal {
@@ -729,10 +733,11 @@ h2 {
         max-width: 100% !important;
         margin: 0 auto !important;
         padding: 0 !important;
+        
     }
    
    .hero-container {
-        position: relative !important;
+        position: relative!important;
         width: 100vw !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
@@ -744,6 +749,7 @@ h2 {
         padding: 0 !important;
         overflow: hidden !important;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
+        contain: layout paint !important;
     }
 
     .video-fundo {
@@ -756,6 +762,7 @@ h2 {
         object-position: center !important;
         transform: none !important;
         z-index: 1 !important;
+       
     }
 
    
@@ -1026,6 +1033,7 @@ h2 {
 .rodape-conteudo {
         flex-direction: column;
         text-align: center;
+        
     }
 
     .rodape-coluna {
