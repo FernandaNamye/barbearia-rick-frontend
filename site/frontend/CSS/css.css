@@ -685,76 +685,58 @@ h2 {
 
 
 
-@media(max-width: 768px) {
-
-    @media(max-width: 768px) {
-
+@media (max-width: 768px) {
     
     
+  @media (max-width: 768px) {
     
-  
-  
-  html {
+    html, body {
+        width: 100% !important;
+        max-width: 100vw !important;
         margin: 0 !important;
         padding: 0 !important;
-        width: 100% !important;
-        
-    }
-
-    
-    body ,html {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        
-        overflow-y: hidden !important; 
-        overflow-x: hidden!important;
+        overflow-x: hidden !important;
         background-color: #121212 !important; 
         background-image: url('../mobileescuro.png') !important;
-        background-size: auto 100% !important; 
+        background-size: cover !important;
         background-repeat: no-repeat !important;
-        background-attachment: scroll !important; 
-        background-position: center top !important;
-        overscroll-behavior-y: none !important; 
-        -webkit-overflow-scrolling: auto !important;
-        -webkit-overflow-scrolling: touch !important;
+        background-attachment: fixed !important;
+        background-position: center center !important;
     }
-
-
-   
 
 
     .contentor, .apresent, .contentor-texto, .preços, .contato-container {
         background-image: none !important;
-        -webkit-backdrop-filter: blur(4px) !important;
+        
         backdrop-filter: blur(4px) !important;
         border: 1px solid rgba(212, 175, 55, 0.15) !important;
         border-radius: 8px !important;
-        
-    }}
+    }
 
+    
+}
+   
     main, .main-container, #wrapper, .container-principal {
         width: 100% !important;
         max-width: 100% !important;
         margin: 0 auto !important;
         padding: 0 !important;
-        
     }
+
    
-   .hero-container {
-        position: relative!important;
-        width: 100vw !important;
+    .hero-container {
+        position: relative !important;
+        width: 100vw !important; 
         left: 50% !important;
-        transform: translateX(-50%) !important;
-        height: 56.25vw !important;
+        transform: translateX(-50%) !important; 
+        height: 56.25vw !important; 
         min-height: 180px !important;
-        max-height: 240px !important;
+        max-height: 240px !important; 
         margin-top: 0 !important;
-        margin-bottom: 25px !important;
+        margin-bottom: 25px !important; 
         padding: 0 !important;
         overflow: hidden !important;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6) !important;
-        contain: layout paint !important;
     }
 
     .video-fundo {
@@ -763,11 +745,10 @@ h2 {
         left: 0 !important;
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important;
+        object-fit: cover !important; 
         object-position: center !important;
         transform: none !important;
         z-index: 1 !important;
-       
     }
 
    
@@ -1038,7 +1019,6 @@ h2 {
 .rodape-conteudo {
         flex-direction: column;
         text-align: center;
-        position: relative;
     }
 
     .rodape-coluna {
