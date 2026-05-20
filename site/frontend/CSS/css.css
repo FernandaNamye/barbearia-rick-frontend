@@ -692,15 +692,8 @@ h2 {
 
 @media(max-width: 768px) {
     
-    html {
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        
-    }
-
-    
-    body {
+  
+    body,html{
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
