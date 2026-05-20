@@ -692,6 +692,7 @@ h2 {
 
 @media(max-width: 768px) {
     
+    @media(max-width: 768px) {
   
     body,html{
         margin: 0 !important;
@@ -708,7 +709,7 @@ h2 {
         overscroll-behavior-y: none !important; 
         -webkit-overflow-scrolling: auto !important;
         -webkit-overflow-scrolling: touch !important;
-    }
+    }}
 
     .contentor, .apresent, .contentor-texto, .preços, .contato-container {
         background-image: none !important;
