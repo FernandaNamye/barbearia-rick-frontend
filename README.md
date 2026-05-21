@@ -28,7 +28,7 @@ A interface do utilizador foi construída utilizando tecnologias web nativas par
 
 ---
 
-## 📦 Funcionalidade Implementadas
+## 📦 Funcionalidades Implementadas:
 
 * 📱 **Design Mobile-First & Responsivo:** Interface perfeitamente adaptada para ecrãs de smartphones (iOS/Android) e monitores desktop.
 * ✍️ **Formulário de Feedback Dinâmico:** Permite aos clientes avaliar os serviços dos barbeiros diretamente na página.
