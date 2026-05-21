@@ -17,7 +17,7 @@ O site está totalmente publicado e pode ser acedido em tempo real através do l
 
 ---
 
-## 🛠️ Tecnologie Utilizzate
+## 🛠️ Tecnologias Utilizadas:
 
 A interface do utilizador foi construída utilizando tecnologias web nativas para garantir a máxima performance, leveza e compatibilidade:
 
@@ -28,7 +28,7 @@ A interface do utilizador foi construída utilizando tecnologias web nativas par
 
 ---
 
-## 📦 Funzionalità Implementate
+## 📦 Funcionalidade Implementadas
 
 * 📱 **Design Mobile-First & Responsivo:** Interface perfeitamente adaptada para ecrãs de smartphones (iOS/Android) e monitores desktop.
 * ✍️ **Formulário de Feedback Dinâmico:** Permite aos clientes avaliar os serviços dos barbeiros diretamente na página.
