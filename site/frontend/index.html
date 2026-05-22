@@ -49,7 +49,7 @@
 
     <div class="hero-container" id="home">
         <video autoplay loop muted playsinline class="video-fundo">
-            <source src="video.cabeçalho.mp4" type="video/mp4">
+            <source src="video.barber.mp4" type="video/mp4">
         </video>
 
         <header id="header">
@@ -147,16 +147,23 @@
         <p><span>Cera Ouvido</span> <span>€5,00</span></p>
     </div>
 </div>
-
-   <section class="secao-carousel">
+<section class="secao-carousel">
     <h1 class="titulo-linhas">Nossos Feedbacks:</h1>
     
     <div class="carousel-wrapper">
         <div class="carousel-container" id="carousel">
-            <div class="card atras-esquerda" style="background-image: url('julio02.png');"></div>
-            <div class="card centro" style="background-image: url('artur02.png');"></div>
-            <div class="card atras-direita" style="background-image: url('Francisco.png');"></div>
+        
+            <div class="card" style="background-image: url('julio02.png');"></div>
+            <div class="card" style="background-image: url('artur02.png');"></div>
+            <div class="card" style="background-image: url('Francisco.png');"></div>
+            
+            
+            <div class="card" style="background-image: url('lais.jpg');"></div>
+            <div class="card" style="background-image: url('diogo.jpg');"></div>
+            <div class="card" style="background-image: url('gonçalo.jpg');"></div>
+            <div class="card" style="background-image: url('helder.jpg');"></div>
         </div>
+        
         <div class="controls">
             <button class="btn-seta" id="prev"><i class="fas fa-chevron-left"></i></button>
             <button class="btn-seta" id="next"><i class="fas fa-chevron-right"></i></button>
@@ -331,36 +338,47 @@ const URL_API = "https://barbearia-rick-backend.onrender.com/enviar-feedback";
         }
     });
 }
-        const cards = document.querySelectorAll('.card');
-        const btnNext = document.getElementById('next');
-        const btnPrev = document.getElementById('prev');
+    const carousel = document.getElementById('carousel');
+    const cards = document.querySelectorAll('.card');
+    const btnNext = document.getElementById('next');
+    const btnPrev = document.getElementById('prev');
 
-        if (cards.length === 0) {
-            console.error("Erro: Nenhuma 'card' encontrada!");
-        }
+       let indiceCentral = 1; 
+
+function atualizarCarousel() {
+    const totalCards = cards.length;
+
+    cards.forEach((card, index) => {
         
-        let posicoes = ['atras-esquerda', 'centro', 'atras-direita'];
+        card.classList.remove('atras-esquerda', 'centro', 'atras-direita', 'escondido');
 
-        function atualizarCarousel() {
-            cards.forEach((card, index) => {
-                card.classList.remove('atras-esquerda', 'centro', 'atras-direita');
-                card.classList.add(posicoes[index]);
-            });
+        if (index === indiceCentral) {
+            card.classList.add('centro');
+        } else if (index === (indiceCentral - 1 + totalCards) % totalCards) {
+            card.classList.add('atras-esquerda');
+        } else if (index === (indiceCentral + 1) % totalCards) {
+            card.classList.add('atras-direita');
+        } else {
+            
+            card.classList.add('escondido');
         }
+    });
+}
 
-        if (btnNext) {
-            btnNext.addEventListener('click', () => {
-                posicoes.push(posicoes.shift());
-                atualizarCarousel();
-            });
-        }
 
-        if (btnPrev) {
-            btnPrev.addEventListener('click', () => {
-                posicoes.unshift(posicoes.pop());
-                atualizarCarousel();
-            });
-        }
+btnNext?.addEventListener('click', () => {
+    indiceCentral = (indiceCentral + 1) % cards.length;
+    atualizarCarousel();
+});
+
+
+btnPrev?.addEventListener('click', () => {
+    indiceCentral = (indiceCentral - 1 + cards.length) % cards.length;
+    atualizarCarousel();
+});
+
+
+atualizarCarousel();
     });
     fetch("https://barbearia-rick-backend.onrender.com/enviar-feedback", {
     method: "POST",

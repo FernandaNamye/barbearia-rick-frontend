@@ -443,6 +443,11 @@ h2 {
     z-index: 1;
     opacity: 0.5;
 }
+.card.escondido {
+    opacity: 0;
+    pointer-events: none; 
+    transform: scale(0);   
+}
 
 
 .modal-sobreposicao {
@@ -995,19 +1000,29 @@ h2 {
 }
 
 
+
 .card.centro {
     transform: translateX(-50%) scale(1) !important;
     z-index: 3 !important;
+    opacity: 1 !important;
 }
+
 .card.atras-esquerda {
-    transform: translateX(-105%) scale(0.85) !important;
-    opacity: 0.1 !important;
+    transform: translateX(-160%) scale(0.85) !important; 
+    opacity: 0.5 !important;
     z-index: 1 !important;
 }
+
+
 .card.atras-direita {
-    transform: translateX(5%) scale(0.85) !important;
-    opacity: 0.1 !important;
+    transform: translateX(60%) scale(0.85) !important; 
+    opacity: 0.5 !important;
     z-index: 1 !important;
+}
+
+
+.card.escondido {
+    display: none !important;
 }
     .contato-container {
         display: flex !important;
