@@ -624,7 +624,7 @@ h2 {
     color: #c5a880;
 }
 
-/* Coluna AppBarber */
+
 .col-appbarber p {
     color: #b3b3b3;
     font-size: 0.95rem;
@@ -698,7 +698,7 @@ h2 {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        height: 100dvh !important;
+        height: 100vh !important;
         overflow: hidden !important;
     }
 
@@ -707,7 +707,7 @@ h2 {
         margin: 0 !important;
         padding: 0 !important;
         width: 100% !important;
-        height: 100dvh !important;
+        height: 100vh !important;
         overflow-y: auto !important; 
         overflow-x: hidden !important;
         background-color: #121212 !important; 
