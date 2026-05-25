@@ -1066,4 +1066,5 @@ h2 {
     .rodape-inferior-conteudo {
         flex-direction: column;
         text-align: center;
+        margin-top: auto;
     }}
