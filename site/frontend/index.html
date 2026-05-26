@@ -376,32 +376,8 @@ btnPrev?.addEventListener('click', () => {
     indiceCentral = (indiceCentral - 1 + cards.length) % cards.length;
     atualizarCarousel();
 });
-
-
 atualizarCarousel();
-    });
-    fetch("https://barbearia-rick-backend.onrender.com/enviar-feedback", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-        nome: nomeInput.value,
-        barbeiro: barbeiroSelect.value,
-        mensagem: mensagemTextarea.value
-    })
-})
-.then(response => response.json())
-.then(dados => {
-    if (dados.status === "sucesso") {
-        alert("Avaliação enviada com sucesso!");
-    
-    } else {
-        alert("Erro ao enviar a avaliação.");
-    }
-})
-.catch(erro => console.error("Erro na requisição:", erro));
-
+});
     
     function toggleZoom(elemento) {
         elemento.classList.toggle('com-zoom');
