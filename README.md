@@ -13,7 +13,7 @@
 ## 🚀 Website Online
 
 O site está totalmente publicado e pode ser acedido em tempo real através do link:
-👉 **[barbeariadorick.vercel.app](https://barbeariadorick.vercel.app)**
+👉 **[barbeariadorick.vercel.app](https://barbeariadorick.pt)**
 
 ---
 
