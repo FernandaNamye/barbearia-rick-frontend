@@ -1063,8 +1063,10 @@ h2 {
         margin: 0 auto;
     }
 
-    .rodape-inferior-conteudo {
-        flex-direction: column;
-        text-align: center;
-        margin-top: auto;
+   .rodape-inferior-conteudo {
+        flex-direction: column; 
+        text-align: center;     
+        justify-content: center;
+        gap: 10px;              
+        padding: 20px;          
     }}
