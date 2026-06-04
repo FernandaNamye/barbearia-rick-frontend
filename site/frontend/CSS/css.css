@@ -1050,7 +1050,7 @@ footer.rodape-site {
         padding: 15px !important;
         border-radius: 8px !important;
         -webkit-overflow-scrolling: touch !important;
-        min-height: 200px !important;
+        min-height: 500px !important;
         
 
     }
@@ -1090,7 +1090,7 @@ footer.rodape-site {
         flex-direction: column !important;
         align-items: center !important;
         text-align: center !important;
-        gap: 12px !important;
+        gap: 15px !important;
         width: 80% !important;
         max-width: 290px !important;
         margin: 20px auto !important;
