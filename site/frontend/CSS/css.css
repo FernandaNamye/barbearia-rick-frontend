@@ -903,7 +903,7 @@ footer.rodape-site {
 
 
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     
     
   
@@ -1155,7 +1155,7 @@ footer.rodape-site {
     .container-fotos-horizontal {
         gap: 10px !important;
         padding-bottom: 10px !important;
-        /* Mantém o scroll horizontal */
+        
         justify-content: flex-start !important; 
     }
 
@@ -1182,7 +1182,7 @@ footer.rodape-site {
         -webkit-overflow-scrolling: touch !important;
     }
 
-    /* Forçar o tamanho fixo e a não distorção das fotos */
+    
     .secao-espaco .foto-item {
         min-width: 140px !important;
         width: 140px !important;
@@ -1194,8 +1194,8 @@ footer.rodape-site {
     .secao-espaco .foto-item img {
         width: 100% !important;
         height: 100% !important;
-        object-fit: cover !important; /* Mantém a proporção cortando o excesso */
-        object-position: center center !important; /* Garante que o centro da foto aparece */
+        object-fit: cover !important; 
+        object-position: center center !important; 
         border: 2px solid #d4af37 !important;
         border-radius: 5px !important;
         display: block !important;
