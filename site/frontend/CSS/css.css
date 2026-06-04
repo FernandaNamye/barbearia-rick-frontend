@@ -6,6 +6,14 @@
 html {
     scroll-behavior: smooth;
 }
+body {
+    min-height: 100vh !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+main {
+    flex: 1;
+}
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
@@ -139,7 +147,6 @@ h2 {
     text-align: center;
     
 }
-
 #sobre {
     text-align: center;
     padding: 60px 20px;
@@ -286,6 +293,71 @@ h2 {
     gap: 20px; 
     text-align: center;
     padding: 10px;
+}
+.secao-espaco {
+    padding: 5px 20px;
+    text-align: center;
+}
+.secao-espaco h1 {
+    color: #FFD700;
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secao-espaco h1::before,
+.secao-espaco h1::after {
+    content: '';
+    height: 2px;
+    flex-grow: 1;
+    max-width: 120px; 
+}
+
+.secao-espaco h1::before {
+    background: linear-gradient(to right, transparent, #FFD700);
+}
+
+.secao-espaco h1::after {
+    background: linear-gradient(to left, transparent, #FFD700);
+}
+.container-fotos-horizontal {
+    display: flex;
+    justify-content: center; 
+    gap: 15px;               
+    overflow-x: auto;        
+    padding-bottom: 20px;
+}
+
+.foto-item {
+    min-width: 200px; 
+    height: 250px;
+}
+
+.foto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #d4af37; 
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.foto-item img:hover {
+    transform: scale(1.05); 
+}
+.texto-ambiente {
+    text-align: center;
+    font-size: 1.1rem;
+    color:#ffffff; 
+    margin-top: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
 }
 
 .preços h1 {
@@ -555,137 +627,279 @@ h2 {
     max-width: 100%; 
     filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(90%);
 }
-.rodape-site {
-    background-color: #111111; 
-    color: #ffffff;
-    font-family: Arial, sans-serif; 
-    padding-top: 50px;
-    border-top: 2px solid #c5a880; 
+footer.rodape-site {
+    position: relative !important;
+    margin-top: 50px !important;
+    background-image: none !important;
+    background-color: #111111 !important;
+    height: auto !important;
+    display: block !important;
+    z-index: 100 !important;
+    width: 100% !important;
+    padding: 40px 0 !important;
 }
+.rodape-site {
+
+    background-color: #111111;
+
+    color: #ffffff;
+
+    font-family: Arial, sans-serif;
+
+    padding-top: 50px;
+
+    border-top: 2px solid #c5a880;
+   display: block !important;
+    margin-top: auto;
+    clear: both !important;
+
+}
+
+
 
 .rodape-conteudo {
+
     max-width: 1200px;
+
     margin: 0 auto;
+
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: space-between;
+
     padding: 0 20px 40px 20px;
+
 }
+
+
 
 .rodape-coluna {
+
     flex: 1;
+
     min-width: 250px;
+
     margin-bottom: 30px;
+
 }
 
+
+
 .rodape-coluna h3 {
-    color: #c5a880; 
+
+    color: #c5a880;
+
     font-size: 1.2rem;
+
     margin-bottom: 20px;
+
     text-transform: uppercase;
+
     letter-spacing: 1px;
+
 }
+
+
+
 
 
 .rodape-coluna ul {
+
     list-style: none;
+
     padding: 0;
+
     margin: 0;
+
 }
+
+
 
 .rodape-coluna ul li {
+
     margin-bottom: 12px;
+
 }
+
+
 
 .rodape-coluna ul li a {
+
     color: #b3b3b3;
+
     text-decoration: none;
+
     transition: color 0.3s ease;
+
 }
 
+
+
 .rodape-coluna ul li a:hover {
+
     color: #c5a880;
+
 }
+
+
+
 
 
 .redes-sociais {
+
     display: flex;
+
     flex-direction: column;
+
     gap: 12px;
+
 }
+
+
 
 .link-social {
+
     color: #b3b3b3;
+
     text-decoration: none;
+
     transition: color 0.3s ease;
+
 }
 
+
+
 .link-social:hover {
+
     color: #c5a880;
+
 }
+
+
+
 
 
 .col-appbarber p {
+
     color: #b3b3b3;
+
     font-size: 0.95rem;
+
     margin-bottom: 15px;
+
 }
+
+
 
 .link-appbarber img {
+
     max-width: 150px;
+
     height: auto;
+
     display: block;
+
     transition: transform 0.3s ease;
+
 }
 
+
+
 .link-appbarber img:hover {
-    transform: scale(1.05); 
+
+    transform: scale(1.05);
+
 }
+
+
+
 
 
 .txt-fallback-appbarber {
+
     display: inline-block;
-    background-color: #0d47a1; 
+
+    background-color: #0d47a1;
+
     color: white;
+
     padding: 8px 16px;
+
     border-radius: 4px;
+
     font-weight: bold;
+
     text-decoration: none;
+
 }
+
+
+
 
 
 .rodape-inferior {
+
     background-color: #090909;
+
     padding: 20px 0;
+
     font-size: 0.85rem;
+
     color: #666666;
+
     border-top: 1px solid #1f1f1f;
+
 }
+
+
 
 .rodape-inferior-conteudo {
+
     max-width: 1200px;
+
     margin: 0 auto;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
+
     flex-wrap: wrap;
+
     padding: 0 20px;
+
 }
+
+
 
 .rodape-inferior-conteudo p {
+
     margin: 5px 0;
+
 }
+
+
 
 .rodape-inferior .creditos a {
+
     color: #888888;
+
     text-decoration: none;
+
     transition: color 0.3s ease;
+
 }
+
+
 
 .rodape-inferior .creditos a:hover {
-    color: #c5a880;
-}
 
+    color: #c5a880;
+
+}
 
 
 
@@ -828,7 +1042,7 @@ h2 {
         overflow-x: auto !important;    
         scroll-behavior: smooth !important;
         white-space: nowrap !important; 
-        gap: 15px !important;           
+        gap: 20px !important;           
         width: 95% !important;         
         max-width: 100% !important;
         margin: 0 auto !important;
@@ -916,6 +1130,44 @@ h2 {
         color: #ffffff !important;
         line-height: 1.4 !important;
         margin: 0 !important;
+    }
+    .secao-espaco {
+        padding: 10px 5px !important;
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .secao-espaco h1 {
+        font-size: 1.4rem !important; 
+        margin-bottom: 20px !important;
+        gap: 10px !important;
+    }
+
+    .secao-espaco h1::before,
+    .secao-espaco h1::after {
+        max-width: 50px !important; 
+    }
+
+    .container-fotos-horizontal {
+        gap: 10px !important;
+        padding-bottom: 10px !important;
+        /* Mantém o scroll horizontal */
+        justify-content: flex-start !important; 
+    }
+
+    .foto-item {
+        min-width: 150px !important; 
+        height: 180px !important;
+    }
+
+    .foto-item img {
+        border-width: 2px !important; 
+    }
+
+    .texto-ambiente {
+        font-size: 0.85rem !important;
+        padding: 0 15px !important;
+        margin-top: 15px !important;
     }
 
     .preços h1 {
