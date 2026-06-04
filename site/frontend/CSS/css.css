@@ -933,6 +933,7 @@ footer.rodape-site {
         overscroll-behavior-y: none !important; 
         -webkit-overflow-scrolling: auto !important;
         -webkit-overflow-scrolling: touch !important;
+        padding-top:env(safe-area-inset-top) !important;
     }
     
    
@@ -986,7 +987,7 @@ footer.rodape-site {
 
    
     #header {
-        position: absolute !important; 
+        position: fixed !important; 
         top: 0 !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
