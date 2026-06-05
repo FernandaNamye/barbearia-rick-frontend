@@ -48,7 +48,7 @@
 <body style="background-image: url('background03.png'); background-size: cover; background-attachment: fixed; background-position: center; background-color: #111;">
 
     <div class="hero-container" id="home">
-        <video autoplay loop muted playsinline class="video-fundo">
+        <video autoplay loop muted playsinline preload="auto" class="video-fundo">
             <source src="video.cabeçalho02.mp4" type="video/mp4">
         </video>
 
@@ -213,7 +213,6 @@
                     <select id="barbeiro" name="barbeiro">
                         <option value="rick">Rick</option>
                         <option value="lincoln">Lincoln</option>
-                        <option value="samuel">Samuel</option>
                         <option value="outro">Outro Barbeiro</option>
                     </select>
                 </div>
@@ -276,6 +275,11 @@
             </div>
         </div>
     </footer>
+    <a href="https://wa.me/351930633810?text=Olá!%20Gostaria%20de%20agendar%20um%20horário." 
+   target="_blank" 
+   class="whatsapp-float">
+   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
 
     <script>
         const URL_API = "https://barbearia-rick-backend.onrender.com/enviar-feedback";
@@ -389,5 +393,14 @@
             elemento.classList.toggle('com-zoom');
         }
     </script>
+    <script>
+    const numero = "930 633 810"; 
+    const mensagem = "Olá! Gostaria de agendar um horário na Barbearia do Rick.";
+    
+   
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+    
+    document.getElementById('link-whatsapp').href = url;
+</script>
 </body>
 </html>

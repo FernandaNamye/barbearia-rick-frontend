@@ -900,6 +900,31 @@ footer.rodape-site {
     color: #c5a880;
 
 }
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px; /* Distância do fundo */
+    right: 25px;  /* Distância da direita */
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 9999; /* Garante que fique por cima de tudo */
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img {
+    width: 35px;
+    height: 35px;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    background-color: #128c7e;
+}
 
 
 
@@ -961,9 +986,9 @@ footer.rodape-site {
         width: 100vw !important;
         left: 50% !important;
         transform: translateX(-50%) !important;
-        height: 56.25vw !important;
-        min-height: 180px !important;
-        max-height: 240px !important;
+        height: 70vw !important;
+        min-height: 200px !important;
+        max-height: 400px !important;
         margin-top: 0 !important;
         margin-bottom: 25px !important;
         padding: 0 !important;
@@ -1031,9 +1056,10 @@ footer.rodape-site {
         font-size: 1.4rem !important;
         text-align: center !important;
         padding: 0 10px !important;
-        margin-top: 10px !important;
-        margin-bottom: 10px !important;
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
         color: #d4af37 !important;
+        
     }
 
   
@@ -1043,15 +1069,16 @@ footer.rodape-site {
         overflow-x: auto !important;    
         scroll-behavior: smooth !important;
         white-space: nowrap !important; 
-        gap: 20px !important;           
+        gap: 15px !important;           
         width: 95% !important;   
         height: auto !important;      
         max-width: 100% !important;
         margin: 0 auto !important;
-        padding: 15px !important;
+        padding: 10px !important;
         border-radius: 8px !important;
         -webkit-overflow-scrolling: touch !important;
         min-height: 500px !important;
+        margin-top: 0px !important;
         
 
     }
@@ -1352,4 +1379,16 @@ footer.rodape-site {
         justify-content: center;
         gap: 10px;              
         padding: 20px;          
-    }}
+    }
+    .whatsapp-float {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-float img {
+        width: 30px;
+        height: 30px;
+    }
+}
