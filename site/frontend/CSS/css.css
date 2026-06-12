@@ -900,10 +900,11 @@ footer.rodape-site {
     color: #c5a880;
 
 }
+
 .whatsapp-float {
     position: fixed;
-    bottom: 25px; /* Distância do fundo */
-    right: 25px;  /* Distância da direita */
+    bottom: 25px; 
+    right: 25px;  
     width: 60px;
     height: 60px;
     background-color: #25d366;
@@ -912,7 +913,7 @@ footer.rodape-site {
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
-    z-index: 9999; /* Garante que fique por cima de tudo */
+    z-index: 9999; 
     transition: transform 0.3s ease;
 }
 
@@ -922,7 +923,7 @@ footer.rodape-site {
 }
 
 .whatsapp-float:hover {
-    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+    transform: scale(1.1); 
     background-color: #128c7e;
 }
 
